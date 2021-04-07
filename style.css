@@ -1,4 +1,5 @@
 * {
+
     margin: 0;
     padding: 0;
 
@@ -8,12 +9,49 @@
     position: fixed;
     width: 200px;
     height: 100%;
-    background-color: #e71c3c;
+    background-color: turquoise;
+    left: -200px;
+    transition: all 0.5s linear;
+    
 }
 
-#LeftSideBar ul li {
+#leftsidebar.active {
+    left: 0;
+}
+
+#leftsidebar ul li {
     list-style: none;
     padding: 10px 10px;
-    border-bottom: 1px solid rgba(red, green, blue, alpha)
+    border-bottom: lpx solid rgba(255,255,255,0.4);
+    cursor: pointer;
+    
 
+}
+#leftsidebar ul li:hover {
+    background-color: turquoise;
+}
+#leftsidebar ul li a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.leftsidebarbutton {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    cursor: pointer;
+
+}
+.leftsidebarbutton::before {
+    content:"\f0c9" ;
+    font-family: FontAwesome;
+    color:black;
+    position: absolute;
+    font-size: 28px;
+    background-color:red;
+    padding: 5px 10px;
+
+}
+.leftsidebarbutton:hover {
+    background-color:red;
 }
