@@ -1,0 +1,145 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+#leftsidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: turquoise;
+    left: -200px;
+    transition: all 0.5s linear;
+    
+}
+
+#leftsidebar.active {
+    left: 0;
+}
+
+#leftsidebar ul li {
+    list-style: none;
+    padding: 10px 10px;
+    border-bottom: lpx solid rgba(255,255,255,0.4);
+    cursor: pointer;
+    
+
+}
+#leftsidebar ul li:hover {
+    background-color: turquoise;
+}
+#leftsidebar ul li a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.leftsidebarbutton {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    cursor: pointer;
+
+}
+.leftsidebarbutton::before {
+    content:"\f0c9" ;
+    font-family: FontAwesome;
+    color:black;
+    position: absolute;
+    font-size: 28px;
+    background-color:red;
+    padding: 5px 10px;
+
+}
+.leftsidebarbutton:hover {
+    background-color:red;
+}
+body{
+    background-color: grey;
+}
+input {
+
+    outline: none;
+    
+    }
+    
+    input[type=search] {
+    
+    -webkit-appearance: textfield;
+    
+    -webkit-box-sizing: content-box;
+    
+    font-family: inherit;
+    
+    font-size: 100%;
+    
+    }
+    
+    input::-webkit-search-decoration,
+    
+    input::-webkit-search-cancel-button {
+    
+    display: none; 
+    
+    }
+    
+    input:-moz-placeholder {
+    
+    color: #999;
+    
+    }
+    
+    input::-webkit-input-placeholder {
+    
+    color: #999;
+    
+    }
+    
+    
+    
+    input[type=search] {
+    
+    background: #ededed url(images/ara.png) no-repeat 9px center; 
+    
+    border: solid 1px #ccc;
+    
+    padding: 9px 10px 9px 32px;
+    
+    width: 55px; /* Arama Kutusunun ilk boyutu*/
+    
+    
+    
+    -webkit-border-radius: 10em;
+    
+    -moz-border-radius: 10em;
+    
+    border-radius: 10em;
+    
+    
+    
+    -webkit-transition: all .5s;
+    
+    -moz-transition: all .5s;
+    
+    transition: all .5s;
+    
+    }
+    
+    input[type=search]:focus {
+    
+    width: 180px; /* Arama Kutusuna tıkladığınızda oluşacak boyut*/
+    
+    background-color: #fff;
+    
+    border-color: #6dcff6;
+    
+    
+    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    
+    }
